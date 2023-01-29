@@ -9,5 +9,4 @@ public class Test2
 		int z=x+y;
 		System.out.println(z);
 	}
-
 }
