@@ -26,5 +26,7 @@ public class Test2
 		System.out.println(z);
 		z=Test2.subtract(x, y); //calling static method
 		System.out.println(z);
+		z=obj.multiply(x, y); //calling non-static method
+		System.out.println(z);
 	}
 }
