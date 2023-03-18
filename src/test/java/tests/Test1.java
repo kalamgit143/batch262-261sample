@@ -1,9 +1,16 @@
 package tests;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Test1
 {
 	public static void main(String[] args)
 	{
-		System.out.println("hi students, happy weekend ");
+		//open browser 
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 }
