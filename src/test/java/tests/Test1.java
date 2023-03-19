@@ -12,7 +12,7 @@ public class Test1
 	@Test
 	public void method()
 	{
-		//open browser 
+		//open browser(SWD-Java)
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
