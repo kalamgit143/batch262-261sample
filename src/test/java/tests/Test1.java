@@ -20,7 +20,7 @@ public class Test1
 		driver.get("http://google.co.in");
 		String t=driver.getTitle();
 		driver.quit();
-		if(t.equals("Google"))
+		if(t.equals("google"))
 		{
 			Assert.assertTrue(true);
 		}
