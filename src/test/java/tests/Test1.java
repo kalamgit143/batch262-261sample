@@ -17,6 +17,6 @@ public class Test1
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		Assert.assertTrue(true);
-		driver.close();
+		driver.quit();
 	}
 }
