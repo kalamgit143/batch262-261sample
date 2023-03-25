@@ -17,7 +17,16 @@ public class Test1
 		WebDriverManager.chromedriver().setup();
 		RemoteWebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		Assert.assertTrue(true);
+		driver.get("http://google.co.in");
+		String t=driver.getTitle();
 		driver.quit();
+		if(t.equals("Google"))
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			Assert.assertTrue(false);
+		}
 	}
 }
